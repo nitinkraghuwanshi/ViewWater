@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD0D52881E649A1300C0B4D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0D52871E649A1300C0B4D6 /* main.m */; };
+		FD0D528B1E649A1300C0B4D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0D528A1E649A1300C0B4D6 /* AppDelegate.m */; };
+		FD0D528E1E649A1300C0B4D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0D528D1E649A1300C0B4D6 /* ViewController.m */; };
+		FD0D52911E649A1300C0B4D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0D528F1E649A1300C0B4D6 /* Main.storyboard */; };
+		FD0D52931E649A1300C0B4D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0D52921E649A1300C0B4D6 /* Assets.xcassets */; };
+		FD0D52961E649A1300C0B4D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0D52941E649A1300C0B4D6 /* LaunchScreen.storyboard */; };
+		FD0D52A11E649A1300C0B4D6 /* ViewWaterCustomerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0D52A01E649A1300C0B4D6 /* ViewWaterCustomerTests.m */; };
+		FD0D52AC1E649A1300C0B4D6 /* ViewWaterCustomerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0D52AB1E649A1300C0B4D6 /* ViewWaterCustomerUITests.m */; };
+		FD0D52C91E64B2A600C0B4D6 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0D52C81E64B2A600C0B4D6 /* ProfileViewController.m */; };
+		FD0D52CC1E64B2B900C0B4D6 /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0D52CB1E64B2B900C0B4D6 /* EditProfileViewController.m */; };
+		FD0D52CF1E64B2CD00C0B4D6 /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0D52CE1E64B2CD00C0B4D6 /* ProductListViewController.m */; };
+		FD0D52D21E64B2E000C0B4D6 /* ProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0D52D11E64B2E000C0B4D6 /* ProductDetailsViewController.m */; };
+		FD0D52DB1E64BB2500C0B4D6 /* OrderConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0D52DA1E64BB2500C0B4D6 /* OrderConfirmationViewController.m */; };
+		FD3EAAE81E9FBB1C0073D06B /* CurrentAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3EAAE71E9FBB1C0073D06B /* CurrentAddressViewController.m */; };
+		FD5F934F1E6679570012DDE6 /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5F934E1E6679570012DDE6 /* AddressViewController.m */; };
+		FD6AE3871E6872F10040A7EC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD6AE3861E6872F10040A7EC /* GoogleMaps.bundle */; };
+		FD6AE3891E68745D0040A7EC /* GooglePlacePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6AE3881E68745C0040A7EC /* GooglePlacePicker.framework */; };
+		FD6AE38B1E68746B0040A7EC /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6AE38A1E68746B0040A7EC /* GooglePlaces.framework */; };
+		FD6AE38D1E6876440040A7EC /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD6AE38C1E6876440040A7EC /* GooglePlaces.bundle */; };
+		FD6AE38F1E6876810040A7EC /* GooglePlacePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD6AE38E1E6876810040A7EC /* GooglePlacePicker.bundle */; };
+		FD7454531E9CD32400D91BAB /* ViewWaterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7454521E9CD32400D91BAB /* ViewWaterManager.m */; };
+		FD80417A1E75E01600173A9E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8041791E75E01600173A9E /* Reachability.m */; };
+		FD80417D1E75EB3900173A9E /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD80417C1E75EB3900173A9E /* LoadingView.m */; };
+		FD8041821E76514300173A9E /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8041811E76514300173A9E /* Order.m */; };
+		FD8041851E7651FD00173A9E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8041841E7651FD00173A9E /* User.m */; };
+		FD8041881E76632E00173A9E /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8041871E76632E00173A9E /* Product.m */; };
+		FD95A7ED1E99079C00C7864E /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD95A7EC1E99079C00C7864E /* OrderTableViewCell.m */; };
+		FD95A7F01E9907AC00C7864E /* CustomerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD95A7EF1E9907AC00C7864E /* CustomerTableViewCell.m */; };
+		FD95A7F31E99092400C7864E /* DistributorDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD95A7F21E99092400C7864E /* DistributorDetailsCell.m */; };
+		FD95A7F61E99095400C7864E /* ProductOrderedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD95A7F51E99095400C7864E /* ProductOrderedCell.m */; };
+		FD95A7FC1E9910D200C7864E /* OrderDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD95A7FB1E9910D200C7864E /* OrderDetailsTableViewController.m */; };
+		FDC0FCAE1E684B0B00958BEB /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCAD1E684B0B00958BEB /* GoogleMapsBase.framework */; };
+		FDC0FCB11E684B1D00958BEB /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCAF1E684B1D00958BEB /* GoogleMaps.framework */; };
+		FDC0FCB21E684B1D00958BEB /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCB01E684B1D00958BEB /* GoogleMapsCore.framework */; };
+		FDC0FCBD1E6851DA00958BEB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCBC1E6851DA00958BEB /* Accelerate.framework */; };
+		FDC0FCBF1E6851E400958BEB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCBE1E6851E400958BEB /* CoreData.framework */; };
+		FDC0FCC11E6851EF00958BEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCC01E6851EF00958BEB /* CoreGraphics.framework */; };
+		FDC0FCC31E6851F500958BEB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCC21E6851F500958BEB /* CoreLocation.framework */; };
+		FDC0FCC51E6851FF00958BEB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCC41E6851FF00958BEB /* CoreText.framework */; };
+		FDC0FCC71E68520C00958BEB /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCC61E68520C00958BEB /* GLKit.framework */; };
+		FDC0FCC91E68521400958BEB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCC81E68521400958BEB /* ImageIO.framework */; };
+		FDC0FCCB1E68522800958BEB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCCA1E68522800958BEB /* libc++.tbd */; };
+		FDC0FCCD1E68523800958BEB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCCC1E68523800958BEB /* libz.tbd */; };
+		FDC0FCCF1E68524200958BEB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCCE1E68524200958BEB /* OpenGLES.framework */; };
+		FDC0FCD11E68524C00958BEB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCD01E68524C00958BEB /* QuartzCore.framework */; };
+		FDC0FCD31E68525100958BEB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCD21E68525100958BEB /* SystemConfiguration.framework */; };
+		FDC0FCD51E68526800958BEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0FCD41E68526800958BEB /* UIKit.framework */; };
+		FDC8CA301E76DD0700777690 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC8CA2F1E76DD0700777690 /* ProductCell.m */; };
+		FDCD2ED81E9B4CE00088E020 /* DistributorAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCD2ED71E9B4CE00088E020 /* DistributorAddressViewController.m */; };
+		FDCD2EDC1E9B730C0088E020 /* SectionHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCD2EDB1E9B730C0088E020 /* SectionHeaderTableViewCell.m */; };
+		FDD458FC1E9A8C19007E4CBA /* OrderHistoryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD458FB1E9A8C19007E4CBA /* OrderHistoryListTableViewController.m */; };
+		FDD459031E9A9308007E4CBA /* OrderListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD459021E9A9308007E4CBA /* OrderListCell.m */; };
+		FDE4ADDD1E93BE7A004C4029 /* CustomPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE4ADDC1E93BE7A004C4029 /* CustomPageControl.m */; };
+		FDFF8FCE1E92A1540034EC2C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDFF8FCD1E92A1540034EC2C /* LoadingView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD0D529D1E649A1300C0B4D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD0D527B1E649A1300C0B4D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD0D52821E649A1300C0B4D6;
+			remoteInfo = ViewWaterCustomer;
+		};
+		FD0D52A81E649A1300C0B4D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD0D527B1E649A1300C0B4D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD0D52821E649A1300C0B4D6;
+			remoteInfo = ViewWaterCustomer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD0D52831E649A1300C0B4D6 /* ViewWaterCustomer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewWaterCustomer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD0D52871E649A1300C0B4D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD0D52891E649A1300C0B4D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD0D528A1E649A1300C0B4D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD0D528C1E649A1300C0B4D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD0D528D1E649A1300C0B4D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD0D52901E649A1300C0B4D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD0D52921E649A1300C0B4D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD0D52951E649A1300C0B4D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD0D52971E649A1300C0B4D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0D529C1E649A1300C0B4D6 /* ViewWaterCustomerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewWaterCustomerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD0D52A01E649A1300C0B4D6 /* ViewWaterCustomerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewWaterCustomerTests.m; sourceTree = "<group>"; };
+		FD0D52A21E649A1300C0B4D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0D52A71E649A1300C0B4D6 /* ViewWaterCustomerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewWaterCustomerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD0D52AB1E649A1300C0B4D6 /* ViewWaterCustomerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewWaterCustomerUITests.m; sourceTree = "<group>"; };
+		FD0D52AD1E649A1300C0B4D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0D52C71E64B2A600C0B4D6 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		FD0D52C81E64B2A600C0B4D6 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		FD0D52CA1E64B2B900C0B4D6 /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
+		FD0D52CB1E64B2B900C0B4D6 /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
+		FD0D52CD1E64B2CD00C0B4D6 /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		FD0D52CE1E64B2CD00C0B4D6 /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
+		FD0D52D01E64B2E000C0B4D6 /* ProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailsViewController.h; sourceTree = "<group>"; };
+		FD0D52D11E64B2E000C0B4D6 /* ProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailsViewController.m; sourceTree = "<group>"; };
+		FD0D52D91E64BB2500C0B4D6 /* OrderConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderConfirmationViewController.h; sourceTree = "<group>"; };
+		FD0D52DA1E64BB2500C0B4D6 /* OrderConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderConfirmationViewController.m; sourceTree = "<group>"; };
+		FD3EAAE61E9FBB1C0073D06B /* CurrentAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentAddressViewController.h; sourceTree = "<group>"; };
+		FD3EAAE71E9FBB1C0073D06B /* CurrentAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentAddressViewController.m; sourceTree = "<group>"; };
+		FD5F934D1E6679570012DDE6 /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		FD5F934E1E6679570012DDE6 /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		FD6AE3861E6872F10040A7EC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		FD6AE3881E68745C0040A7EC /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlacePicker.framework; sourceTree = "<group>"; };
+		FD6AE38A1E68746B0040A7EC /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlaces.framework; sourceTree = "<group>"; };
+		FD6AE38C1E6876440040A7EC /* GooglePlaces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		FD6AE38E1E6876810040A7EC /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = GooglePlacePicker.framework/Versions/A/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
+		FD7454511E9CD32400D91BAB /* ViewWaterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewWaterManager.h; path = SharedClasses/ViewWaterManager.h; sourceTree = "<group>"; };
+		FD7454521E9CD32400D91BAB /* ViewWaterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewWaterManager.m; path = SharedClasses/ViewWaterManager.m; sourceTree = "<group>"; };
+		FD8041761E75CF4F00173A9E /* ViewWaterConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewWaterConstants.h; path = ViewWaterCustomer/ViewWaterConstants.h; sourceTree = "<group>"; };
+		FD8041781E75E01600173A9E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FD8041791E75E01600173A9E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FD80417B1E75EB3900173A9E /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadingView.h; path = Common/LoadingView.h; sourceTree = "<group>"; };
+		FD80417C1E75EB3900173A9E /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadingView.m; path = Common/LoadingView.m; sourceTree = "<group>"; };
+		FD8041801E76514300173A9E /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		FD8041811E76514300173A9E /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		FD8041831E7651FD00173A9E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FD8041841E7651FD00173A9E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FD8041861E76632E00173A9E /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		FD8041871E76632E00173A9E /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		FD95A7EB1E99079C00C7864E /* OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableViewCell.h; sourceTree = "<group>"; };
+		FD95A7EC1E99079C00C7864E /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
+		FD95A7EE1E9907AC00C7864E /* CustomerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerTableViewCell.h; sourceTree = "<group>"; };
+		FD95A7EF1E9907AC00C7864E /* CustomerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTableViewCell.m; sourceTree = "<group>"; };
+		FD95A7F11E99092400C7864E /* DistributorDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributorDetailsCell.h; sourceTree = "<group>"; };
+		FD95A7F21E99092400C7864E /* DistributorDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributorDetailsCell.m; sourceTree = "<group>"; };
+		FD95A7F41E99095400C7864E /* ProductOrderedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductOrderedCell.h; sourceTree = "<group>"; };
+		FD95A7F51E99095400C7864E /* ProductOrderedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductOrderedCell.m; sourceTree = "<group>"; };
+		FD95A7FA1E9910D200C7864E /* OrderDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailsTableViewController.h; sourceTree = "<group>"; };
+		FD95A7FB1E9910D200C7864E /* OrderDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailsTableViewController.m; sourceTree = "<group>"; };
+		FDC0FCAD1E684B0B00958BEB /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		FDC0FCAF1E684B1D00958BEB /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		FDC0FCB01E684B1D00958BEB /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
+		FDC0FCBC1E6851DA00958BEB /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FDC0FCBE1E6851E400958BEB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FDC0FCC01E6851EF00958BEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FDC0FCC21E6851F500958BEB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FDC0FCC41E6851FF00958BEB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FDC0FCC61E68520C00958BEB /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		FDC0FCC81E68521400958BEB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		FDC0FCCA1E68522800958BEB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FDC0FCCC1E68523800958BEB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FDC0FCCE1E68524200958BEB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FDC0FCD01E68524C00958BEB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FDC0FCD21E68525100958BEB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FDC0FCD41E68526800958BEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FDC8CA2E1E76DD0700777690 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
+		FDC8CA2F1E76DD0700777690 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
+		FDCD2ED61E9B4CE00088E020 /* DistributorAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributorAddressViewController.h; sourceTree = "<group>"; };
+		FDCD2ED71E9B4CE00088E020 /* DistributorAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributorAddressViewController.m; sourceTree = "<group>"; };
+		FDCD2EDA1E9B730C0088E020 /* SectionHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderTableViewCell.h; sourceTree = "<group>"; };
+		FDCD2EDB1E9B730C0088E020 /* SectionHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderTableViewCell.m; sourceTree = "<group>"; };
+		FDD458FA1E9A8C19007E4CBA /* OrderHistoryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHistoryListTableViewController.h; sourceTree = "<group>"; };
+		FDD458FB1E9A8C19007E4CBA /* OrderHistoryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHistoryListTableViewController.m; sourceTree = "<group>"; };
+		FDD459011E9A9308007E4CBA /* OrderListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListCell.h; sourceTree = "<group>"; };
+		FDD459021E9A9308007E4CBA /* OrderListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListCell.m; sourceTree = "<group>"; };
+		FDE4ADDB1E93BE7A004C4029 /* CustomPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPageControl.h; sourceTree = "<group>"; };
+		FDE4ADDC1E93BE7A004C4029 /* CustomPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPageControl.m; sourceTree = "<group>"; };
+		FDFF8FCD1E92A1540034EC2C /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingView.xib; path = Common/LoadingView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD0D52801E649A1300C0B4D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC0FCD51E68526800958BEB /* UIKit.framework in Frameworks */,
+				FDC0FCD31E68525100958BEB /* SystemConfiguration.framework in Frameworks */,
+				FDC0FCD11E68524C00958BEB /* QuartzCore.framework in Frameworks */,
+				FDC0FCCF1E68524200958BEB /* OpenGLES.framework in Frameworks */,
+				FDC0FCCD1E68523800958BEB /* libz.tbd in Frameworks */,
+				FDC0FCCB1E68522800958BEB /* libc++.tbd in Frameworks */,
+				FDC0FCC91E68521400958BEB /* ImageIO.framework in Frameworks */,
+				FDC0FCC71E68520C00958BEB /* GLKit.framework in Frameworks */,
+				FDC0FCC51E6851FF00958BEB /* CoreText.framework in Frameworks */,
+				FD6AE3891E68745D0040A7EC /* GooglePlacePicker.framework in Frameworks */,
+				FDC0FCC31E6851F500958BEB /* CoreLocation.framework in Frameworks */,
+				FDC0FCC11E6851EF00958BEB /* CoreGraphics.framework in Frameworks */,
+				FDC0FCBF1E6851E400958BEB /* CoreData.framework in Frameworks */,
+				FDC0FCBD1E6851DA00958BEB /* Accelerate.framework in Frameworks */,
+				FDC0FCB11E684B1D00958BEB /* GoogleMaps.framework in Frameworks */,
+				FD6AE38B1E68746B0040A7EC /* GooglePlaces.framework in Frameworks */,
+				FDC0FCB21E684B1D00958BEB /* GoogleMapsCore.framework in Frameworks */,
+				FDC0FCAE1E684B0B00958BEB /* GoogleMapsBase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0D52991E649A1300C0B4D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0D52A41E649A1300C0B4D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD0D527A1E649A1300C0B4D6 = {
+			isa = PBXGroup;
+			children = (
+				FDCD2EDD1E9BED6B0088E020 /* Common Classes */,
+				FD80417F1E764EDB00173A9E /* Model */,
+				FDC0FCAC1E684AF300958BEB /* External Frameworks */,
+				FD0D52851E649A1300C0B4D6 /* ViewWaterCustomer */,
+				FD0D529F1E649A1300C0B4D6 /* ViewWaterCustomerTests */,
+				FD0D52AA1E649A1300C0B4D6 /* ViewWaterCustomerUITests */,
+				FD0D52841E649A1300C0B4D6 /* Products */,
+				FDC0FCBB1E6851DA00958BEB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD0D52841E649A1300C0B4D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD0D52831E649A1300C0B4D6 /* ViewWaterCustomer.app */,
+				FD0D529C1E649A1300C0B4D6 /* ViewWaterCustomerTests.xctest */,
+				FD0D52A71E649A1300C0B4D6 /* ViewWaterCustomerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD0D52851E649A1300C0B4D6 /* ViewWaterCustomer */ = {
+			isa = PBXGroup;
+			children = (
+				FDCD2EDF1E9BEDB10088E020 /* AppDelegate */,
+				FDCD2EDE1E9BED920088E020 /* MobileOTP */,
+				FDFF8FCF1E92A5AC0034EC2C /* LoadingView */,
+				FD0D52C41E64B28E00C0B4D6 /* HistoryOrderFlow */,
+				FD0D52C51E64B28E00C0B4D6 /* ProductFlow */,
+				FD0D52C61E64B28E00C0B4D6 /* ProfileFlow */,
+				FD0D528F1E649A1300C0B4D6 /* Main.storyboard */,
+				FD0D52921E649A1300C0B4D6 /* Assets.xcassets */,
+				FD0D52941E649A1300C0B4D6 /* LaunchScreen.storyboard */,
+				FD0D52971E649A1300C0B4D6 /* Info.plist */,
+				FD0D52861E649A1300C0B4D6 /* Supporting Files */,
+				FD3EAAE61E9FBB1C0073D06B /* CurrentAddressViewController.h */,
+				FD3EAAE71E9FBB1C0073D06B /* CurrentAddressViewController.m */,
+			);
+			path = ViewWaterCustomer;
+			sourceTree = "<group>";
+		};
+		FD0D52861E649A1300C0B4D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD0D52871E649A1300C0B4D6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD0D529F1E649A1300C0B4D6 /* ViewWaterCustomerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD0D52A01E649A1300C0B4D6 /* ViewWaterCustomerTests.m */,
+				FD0D52A21E649A1300C0B4D6 /* Info.plist */,
+			);
+			path = ViewWaterCustomerTests;
+			sourceTree = "<group>";
+		};
+		FD0D52AA1E649A1300C0B4D6 /* ViewWaterCustomerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD0D52AB1E649A1300C0B4D6 /* ViewWaterCustomerUITests.m */,
+				FD0D52AD1E649A1300C0B4D6 /* Info.plist */,
+			);
+			path = ViewWaterCustomerUITests;
+			sourceTree = "<group>";
+		};
+		FD0D52C41E64B28E00C0B4D6 /* HistoryOrderFlow */ = {
+			isa = PBXGroup;
+			children = (
+				FDD458FD1E9A929E007E4CBA /* OrderList */,
+				FDD459041E9AB5F9007E4CBA /* Order Details */,
+				FDCD2ED91E9B53BC0088E020 /* Distributor Address */,
+			);
+			path = HistoryOrderFlow;
+			sourceTree = "<group>";
+		};
+		FD0D52C51E64B28E00C0B4D6 /* ProductFlow */ = {
+			isa = PBXGroup;
+			children = (
+				FD0D52CD1E64B2CD00C0B4D6 /* ProductListViewController.h */,
+				FD0D52CE1E64B2CD00C0B4D6 /* ProductListViewController.m */,
+				FD0D52D01E64B2E000C0B4D6 /* ProductDetailsViewController.h */,
+				FD0D52D11E64B2E000C0B4D6 /* ProductDetailsViewController.m */,
+				FD0D52D91E64BB2500C0B4D6 /* OrderConfirmationViewController.h */,
+				FD0D52DA1E64BB2500C0B4D6 /* OrderConfirmationViewController.m */,
+				FD5F934D1E6679570012DDE6 /* AddressViewController.h */,
+				FD5F934E1E6679570012DDE6 /* AddressViewController.m */,
+				FDC8CA2E1E76DD0700777690 /* ProductCell.h */,
+				FDC8CA2F1E76DD0700777690 /* ProductCell.m */,
+			);
+			path = ProductFlow;
+			sourceTree = "<group>";
+		};
+		FD0D52C61E64B28E00C0B4D6 /* ProfileFlow */ = {
+			isa = PBXGroup;
+			children = (
+				FD0D52C71E64B2A600C0B4D6 /* ProfileViewController.h */,
+				FD0D52C81E64B2A600C0B4D6 /* ProfileViewController.m */,
+				FD0D52CA1E64B2B900C0B4D6 /* EditProfileViewController.h */,
+				FD0D52CB1E64B2B900C0B4D6 /* EditProfileViewController.m */,
+			);
+			path = ProfileFlow;
+			sourceTree = "<group>";
+		};
+		FD8041771E75E01600173A9E /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				FD8041781E75E01600173A9E /* Reachability.h */,
+				FD8041791E75E01600173A9E /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		FD80417F1E764EDB00173A9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD8041801E76514300173A9E /* Order.h */,
+				FD8041811E76514300173A9E /* Order.m */,
+				FD8041831E7651FD00173A9E /* User.h */,
+				FD8041841E7651FD00173A9E /* User.m */,
+				FD8041861E76632E00173A9E /* Product.h */,
+				FD8041871E76632E00173A9E /* Product.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDC0FCAC1E684AF300958BEB /* External Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD6AE3861E6872F10040A7EC /* GoogleMaps.bundle */,
+				FD6AE38E1E6876810040A7EC /* GooglePlacePicker.bundle */,
+				FD6AE38C1E6876440040A7EC /* GooglePlaces.bundle */,
+				FD6AE38A1E68746B0040A7EC /* GooglePlaces.framework */,
+				FD6AE3881E68745C0040A7EC /* GooglePlacePicker.framework */,
+				FDC0FCAF1E684B1D00958BEB /* GoogleMaps.framework */,
+				FDC0FCB01E684B1D00958BEB /* GoogleMapsCore.framework */,
+				FDC0FCAD1E684B0B00958BEB /* GoogleMapsBase.framework */,
+			);
+			name = "External Frameworks";
+			sourceTree = "<group>";
+		};
+		FDC0FCBB1E6851DA00958BEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDC0FCD41E68526800958BEB /* UIKit.framework */,
+				FDC0FCD21E68525100958BEB /* SystemConfiguration.framework */,
+				FDC0FCD01E68524C00958BEB /* QuartzCore.framework */,
+				FDC0FCCE1E68524200958BEB /* OpenGLES.framework */,
+				FDC0FCCC1E68523800958BEB /* libz.tbd */,
+				FDC0FCCA1E68522800958BEB /* libc++.tbd */,
+				FDC0FCC81E68521400958BEB /* ImageIO.framework */,
+				FDC0FCC61E68520C00958BEB /* GLKit.framework */,
+				FDC0FCC41E6851FF00958BEB /* CoreText.framework */,
+				FDC0FCC21E6851F500958BEB /* CoreLocation.framework */,
+				FDC0FCC01E6851EF00958BEB /* CoreGraphics.framework */,
+				FDC0FCBE1E6851E400958BEB /* CoreData.framework */,
+				FDC0FCBC1E6851DA00958BEB /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDCD2ED91E9B53BC0088E020 /* Distributor Address */ = {
+			isa = PBXGroup;
+			children = (
+				FDCD2ED61E9B4CE00088E020 /* DistributorAddressViewController.h */,
+				FDCD2ED71E9B4CE00088E020 /* DistributorAddressViewController.m */,
+			);
+			name = "Distributor Address";
+			sourceTree = "<group>";
+		};
+		FDCD2EDD1E9BED6B0088E020 /* Common Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FD8041761E75CF4F00173A9E /* ViewWaterConstants.h */,
+				FDCD2EE01E9BEDE40088E020 /* CustomPageControl */,
+				FD8041771E75E01600173A9E /* Reachability */,
+				FD7454511E9CD32400D91BAB /* ViewWaterManager.h */,
+				FD7454521E9CD32400D91BAB /* ViewWaterManager.m */,
+			);
+			name = "Common Classes";
+			sourceTree = "<group>";
+		};
+		FDCD2EDE1E9BED920088E020 /* MobileOTP */ = {
+			isa = PBXGroup;
+			children = (
+				FD0D528C1E649A1300C0B4D6 /* ViewController.h */,
+				FD0D528D1E649A1300C0B4D6 /* ViewController.m */,
+			);
+			name = MobileOTP;
+			sourceTree = "<group>";
+		};
+		FDCD2EDF1E9BEDB10088E020 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FD0D52891E649A1300C0B4D6 /* AppDelegate.h */,
+				FD0D528A1E649A1300C0B4D6 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FDCD2EE01E9BEDE40088E020 /* CustomPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				FDE4ADDB1E93BE7A004C4029 /* CustomPageControl.h */,
+				FDE4ADDC1E93BE7A004C4029 /* CustomPageControl.m */,
+			);
+			name = CustomPageControl;
+			sourceTree = "<group>";
+		};
+		FDD458FD1E9A929E007E4CBA /* OrderList */ = {
+			isa = PBXGroup;
+			children = (
+				FDD458FA1E9A8C19007E4CBA /* OrderHistoryListTableViewController.h */,
+				FDD458FB1E9A8C19007E4CBA /* OrderHistoryListTableViewController.m */,
+				FDD459011E9A9308007E4CBA /* OrderListCell.h */,
+				FDD459021E9A9308007E4CBA /* OrderListCell.m */,
+			);
+			name = OrderList;
+			sourceTree = "<group>";
+		};
+		FDD459041E9AB5F9007E4CBA /* Order Details */ = {
+			isa = PBXGroup;
+			children = (
+				FD95A7FA1E9910D200C7864E /* OrderDetailsTableViewController.h */,
+				FD95A7FB1E9910D200C7864E /* OrderDetailsTableViewController.m */,
+				FDCD2EDA1E9B730C0088E020 /* SectionHeaderTableViewCell.h */,
+				FDCD2EDB1E9B730C0088E020 /* SectionHeaderTableViewCell.m */,
+				FD95A7EB1E99079C00C7864E /* OrderTableViewCell.h */,
+				FD95A7EC1E99079C00C7864E /* OrderTableViewCell.m */,
+				FD95A7EE1E9907AC00C7864E /* CustomerTableViewCell.h */,
+				FD95A7EF1E9907AC00C7864E /* CustomerTableViewCell.m */,
+				FD95A7F11E99092400C7864E /* DistributorDetailsCell.h */,
+				FD95A7F21E99092400C7864E /* DistributorDetailsCell.m */,
+				FD95A7F41E99095400C7864E /* ProductOrderedCell.h */,
+				FD95A7F51E99095400C7864E /* ProductOrderedCell.m */,
+			);
+			name = "Order Details";
+			sourceTree = "<group>";
+		};
+		FDFF8FCF1E92A5AC0034EC2C /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				FD80417B1E75EB3900173A9E /* LoadingView.h */,
+				FD80417C1E75EB3900173A9E /* LoadingView.m */,
+				FDFF8FCD1E92A1540034EC2C /* LoadingView.xib */,
+			);
+			name = LoadingView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD0D52821E649A1300C0B4D6 /* ViewWaterCustomer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD0D52B01E649A1300C0B4D6 /* Build configuration list for PBXNativeTarget "ViewWaterCustomer" */;
+			buildPhases = (
+				FD0D527F1E649A1300C0B4D6 /* Sources */,
+				FD0D52801E649A1300C0B4D6 /* Frameworks */,
+				FD0D52811E649A1300C0B4D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewWaterCustomer;
+			productName = ViewWaterCustomer;
+			productReference = FD0D52831E649A1300C0B4D6 /* ViewWaterCustomer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD0D529B1E649A1300C0B4D6 /* ViewWaterCustomerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD0D52B31E649A1300C0B4D6 /* Build configuration list for PBXNativeTarget "ViewWaterCustomerTests" */;
+			buildPhases = (
+				FD0D52981E649A1300C0B4D6 /* Sources */,
+				FD0D52991E649A1300C0B4D6 /* Frameworks */,
+				FD0D529A1E649A1300C0B4D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD0D529E1E649A1300C0B4D6 /* PBXTargetDependency */,
+			);
+			name = ViewWaterCustomerTests;
+			productName = ViewWaterCustomerTests;
+			productReference = FD0D529C1E649A1300C0B4D6 /* ViewWaterCustomerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD0D52A61E649A1300C0B4D6 /* ViewWaterCustomerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD0D52B61E649A1300C0B4D6 /* Build configuration list for PBXNativeTarget "ViewWaterCustomerUITests" */;
+			buildPhases = (
+				FD0D52A31E649A1300C0B4D6 /* Sources */,
+				FD0D52A41E649A1300C0B4D6 /* Frameworks */,
+				FD0D52A51E649A1300C0B4D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD0D52A91E649A1300C0B4D6 /* PBXTargetDependency */,
+			);
+			name = ViewWaterCustomerUITests;
+			productName = ViewWaterCustomerUITests;
+			productReference = FD0D52A71E649A1300C0B4D6 /* ViewWaterCustomerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD0D527B1E649A1300C0B4D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Nitin Kumar Raghuwanshi";
+				TargetAttributes = {
+					FD0D52821E649A1300C0B4D6 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = VZNWCTDYTJ;
+						ProvisioningStyle = Automatic;
+					};
+					FD0D529B1E649A1300C0B4D6 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = VZNWCTDYTJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FD0D52821E649A1300C0B4D6;
+					};
+					FD0D52A61E649A1300C0B4D6 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = VZNWCTDYTJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FD0D52821E649A1300C0B4D6;
+					};
+				};
+			};
+			buildConfigurationList = FD0D527E1E649A1300C0B4D6 /* Build configuration list for PBXProject "ViewWaterCustomer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD0D527A1E649A1300C0B4D6;
+			productRefGroup = FD0D52841E649A1300C0B4D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD0D52821E649A1300C0B4D6 /* ViewWaterCustomer */,
+				FD0D529B1E649A1300C0B4D6 /* ViewWaterCustomerTests */,
+				FD0D52A61E649A1300C0B4D6 /* ViewWaterCustomerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD0D52811E649A1300C0B4D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6AE38F1E6876810040A7EC /* GooglePlacePicker.bundle in Resources */,
+				FD0D52961E649A1300C0B4D6 /* LaunchScreen.storyboard in Resources */,
+				FD0D52931E649A1300C0B4D6 /* Assets.xcassets in Resources */,
+				FD0D52911E649A1300C0B4D6 /* Main.storyboard in Resources */,
+				FDFF8FCE1E92A1540034EC2C /* LoadingView.xib in Resources */,
+				FD6AE3871E6872F10040A7EC /* GoogleMaps.bundle in Resources */,
+				FD6AE38D1E6876440040A7EC /* GooglePlaces.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0D529A1E649A1300C0B4D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0D52A51E649A1300C0B4D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD0D527F1E649A1300C0B4D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD95A7F61E99095400C7864E /* ProductOrderedCell.m in Sources */,
+				FD8041821E76514300173A9E /* Order.m in Sources */,
+				FD8041881E76632E00173A9E /* Product.m in Sources */,
+				FD8041851E7651FD00173A9E /* User.m in Sources */,
+				FD80417D1E75EB3900173A9E /* LoadingView.m in Sources */,
+				FDCD2ED81E9B4CE00088E020 /* DistributorAddressViewController.m in Sources */,
+				FDC8CA301E76DD0700777690 /* ProductCell.m in Sources */,
+				FD5F934F1E6679570012DDE6 /* AddressViewController.m in Sources */,
+				FD3EAAE81E9FBB1C0073D06B /* CurrentAddressViewController.m in Sources */,
+				FD7454531E9CD32400D91BAB /* ViewWaterManager.m in Sources */,
+				FD0D52D21E64B2E000C0B4D6 /* ProductDetailsViewController.m in Sources */,
+				FDD458FC1E9A8C19007E4CBA /* OrderHistoryListTableViewController.m in Sources */,
+				FD80417A1E75E01600173A9E /* Reachability.m in Sources */,
+				FD0D528E1E649A1300C0B4D6 /* ViewController.m in Sources */,
+				FDCD2EDC1E9B730C0088E020 /* SectionHeaderTableViewCell.m in Sources */,
+				FD0D52DB1E64BB2500C0B4D6 /* OrderConfirmationViewController.m in Sources */,
+				FD0D52CF1E64B2CD00C0B4D6 /* ProductListViewController.m in Sources */,
+				FD0D52CC1E64B2B900C0B4D6 /* EditProfileViewController.m in Sources */,
+				FD95A7FC1E9910D200C7864E /* OrderDetailsTableViewController.m in Sources */,
+				FD0D528B1E649A1300C0B4D6 /* AppDelegate.m in Sources */,
+				FD95A7F31E99092400C7864E /* DistributorDetailsCell.m in Sources */,
+				FDD459031E9A9308007E4CBA /* OrderListCell.m in Sources */,
+				FD0D52C91E64B2A600C0B4D6 /* ProfileViewController.m in Sources */,
+				FD0D52881E649A1300C0B4D6 /* main.m in Sources */,
+				FD95A7ED1E99079C00C7864E /* OrderTableViewCell.m in Sources */,
+				FDE4ADDD1E93BE7A004C4029 /* CustomPageControl.m in Sources */,
+				FD95A7F01E9907AC00C7864E /* CustomerTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0D52981E649A1300C0B4D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0D52A11E649A1300C0B4D6 /* ViewWaterCustomerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0D52A31E649A1300C0B4D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0D52AC1E649A1300C0B4D6 /* ViewWaterCustomerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD0D529E1E649A1300C0B4D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD0D52821E649A1300C0B4D6 /* ViewWaterCustomer */;
+			targetProxy = FD0D529D1E649A1300C0B4D6 /* PBXContainerItemProxy */;
+		};
+		FD0D52A91E649A1300C0B4D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD0D52821E649A1300C0B4D6 /* ViewWaterCustomer */;
+			targetProxy = FD0D52A81E649A1300C0B4D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD0D528F1E649A1300C0B4D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD0D52901E649A1300C0B4D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD0D52941E649A1300C0B4D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD0D52951E649A1300C0B4D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD0D52AE1E649A1300C0B4D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD0D52AF1E649A1300C0B4D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD0D52B11E649A1300C0B4D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VZNWCTDYTJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ViewWaterCustomer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.ViewWaterCustomer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD0D52B21E649A1300C0B4D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VZNWCTDYTJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ViewWaterCustomer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.ViewWaterCustomer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FD0D52B41E649A1300C0B4D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VZNWCTDYTJ;
+				INFOPLIST_FILE = ViewWaterCustomerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.ViewWaterCustomerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewWaterCustomer.app/ViewWaterCustomer";
+			};
+			name = Debug;
+		};
+		FD0D52B51E649A1300C0B4D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VZNWCTDYTJ;
+				INFOPLIST_FILE = ViewWaterCustomerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.ViewWaterCustomerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewWaterCustomer.app/ViewWaterCustomer";
+			};
+			name = Release;
+		};
+		FD0D52B71E649A1300C0B4D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VZNWCTDYTJ;
+				INFOPLIST_FILE = ViewWaterCustomerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.ViewWaterCustomerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ViewWaterCustomer;
+			};
+			name = Debug;
+		};
+		FD0D52B81E649A1300C0B4D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VZNWCTDYTJ;
+				INFOPLIST_FILE = ViewWaterCustomerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.ViewWaterCustomerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ViewWaterCustomer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD0D527E1E649A1300C0B4D6 /* Build configuration list for PBXProject "ViewWaterCustomer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD0D52AE1E649A1300C0B4D6 /* Debug */,
+				FD0D52AF1E649A1300C0B4D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD0D52B01E649A1300C0B4D6 /* Build configuration list for PBXNativeTarget "ViewWaterCustomer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD0D52B11E649A1300C0B4D6 /* Debug */,
+				FD0D52B21E649A1300C0B4D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD0D52B31E649A1300C0B4D6 /* Build configuration list for PBXNativeTarget "ViewWaterCustomerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD0D52B41E649A1300C0B4D6 /* Debug */,
+				FD0D52B51E649A1300C0B4D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD0D52B61E649A1300C0B4D6 /* Build configuration list for PBXNativeTarget "ViewWaterCustomerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD0D52B71E649A1300C0B4D6 /* Debug */,
+				FD0D52B81E649A1300C0B4D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD0D527B1E649A1300C0B4D6 /* Project object */;
+}
